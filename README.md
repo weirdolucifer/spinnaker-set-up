@@ -98,7 +98,7 @@ hal config provider kubernetes enable
 Create a cluster named as eks-spinnaker
 
 ```
-eksctl create cluster --name <CLUSTER_NAME> --version 1.14 --region us-east-2 --nodegroup-name <NODEGROUP-NAME> --node-type t3.large --nodes 2 --nodes-min 2 --nodes-max 2 --ssh-access --ssh-public-key conifer --write-kubeconfig=false
+eksctl create cluster --name <CLUSTER_NAME> --version 1.14 --region us-east-2 --nodegroup-name <NODEGROUP-NAME> --node-type t3.large --nodes 2 --nodes-min 2 --nodes-max 2 --ssh-access --ssh-public-key <SSH_KEY_NAME> --write-kubeconfig=false
 ```
 
 If cluster is already created:
