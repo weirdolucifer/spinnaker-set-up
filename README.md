@@ -264,4 +264,6 @@ hal deploy apply
 * ```kubectl config use-context <context-name>```
 * Run `hal deploy apply`. This command takes some time to reflect the newly created account on Deck. Alternatively, you can try `hal deploy apply --service-names clouddriver` and `hal deploy apply --service-names gate` to boost this process to some extent.
 
-
+### Canary Deployment:
+[Part-1](https://shinesolutions.com/2019/10/04/canary-deployments-with-spinnaker-and-kubernetes-part-1/)
+[Part-2](https://shinesolutions.com/2019/10/07/canary-deployments-with-spinnaker-and-kubernetes-part-2/)
