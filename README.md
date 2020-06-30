@@ -260,6 +260,8 @@ hal deploy apply
 * [Add and configure Kubernetes accounts.](#add-and-configure-kubernetes-accounts)
 * [Configure Spinnaker to install in Kubernetes.](#configure-spinnaker-to-install-in-kubernetes)
 * If you wish to add docker-registry to this account follow the step - [Enable docker-registry and it to your kubernetes account](#enable-docker-registry-and-it-to-your-kubernetes-account)
+* switch back to the context where spinnaker is installed. Get all contexts ```kubectl config get-contexts```.  
+* ```kubectl config use-context <context-name>```
 * Run `hal deploy apply`. This command takes some time to reflect the newly created account on Deck. Alternatively, you can try `hal deploy apply --service-names clouddriver` and `hal deploy apply --service-names gate` to boost this process to some extent.
 
 
